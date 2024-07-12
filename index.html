@@ -25,6 +25,11 @@
         .menu-item:last-child {
             border-bottom: none;
         }
+        .nav-link {
+            display: block;
+            text-align: center;
+            margin: 5px 0;
+        }
         @media (max-width: 576px) {
             .menu-item {
                 flex-direction: column;
@@ -34,12 +39,17 @@
                 align-self: flex-end;
             }
         }
+        @media (max-width: 768px) {
+            .nav-link {
+                margin: 2px 0;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container mt-5">
-        <h1 class="text-center">Menu Ruggero</h1>
-        <nav class="nav justify-content-center">
+        <h1 class="text-center" style="font-size: 45px;">Menu Ruggero</h1>
+        <nav class="nav flex-column align-items-center mb-4">
             <a class="nav-link" href="caffetteria.html">CAFFETTERIA</a>
             <a class="nav-link" href="aperitivi.html">APERITIVI</a>
             <a class="nav-link" href="aperitivi_analcolici.html">APERITIVI ANALCOLICI</a>
